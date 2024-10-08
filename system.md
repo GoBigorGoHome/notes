@@ -5,4 +5,6 @@
 Linux 使用的可执行文件格式是 ELF。  
 Windows 使用的可执行文件格式是 PE。
 
-链接器 [mold](https://github.com/rui314/mold) 暂不支持生成 PE 格式的可执行文件。见讨论 https://github.com/rui314/mold/discussions/346
+链接器 [mold](https://github.com/rui314/mold) 暂不支持生成 PE 格式的可执行文件。相关讨论
+- https://github.com/rui314/mold/issues/190
+- https://github.com/rui314/mold/discussions/346
