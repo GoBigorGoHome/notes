@@ -25,3 +25,7 @@ specifying everything explicitly:
 > ```
 > fontspec knows that the font is to be selected by file name by the presence of the ‘.otf’ extension.
 
+
+# \varnothing
+
+\usepackage{amssymb}
