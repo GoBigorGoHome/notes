@@ -28,7 +28,15 @@ specifying everything explicitly:
 
 # \varnothing
 
-\usepackage{amssymb}
+`\usepackage{amssymb}`
+
+# 定义 \floor 和 \ceil
+
+https://tex.stackexchange.com/questions/42271/floor-and-ceiling-functions
+
+`\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}`
+
+if called as `\ceil*{x}` it will add `\left` and `\right`.
 
 # 用 pgfplots 画函数图像
 
