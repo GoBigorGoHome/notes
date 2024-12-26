@@ -65,3 +65,30 @@ samples=201,
 # What's the difference between \mathrm and \operatorname?
 
 https://tex.stackexchange.com/q/19180/135216
+
+# 排版伪代码
+
+```latex
+\documentclass{ctexart}
+\usepackage[vlined]{algorithm2e} %vlined选项用来消除block结尾的end
+\SetKwProg{Fn}{}{:}{}
+\DontPrintSemicolon %不要在语句末尾打印分号
+
+\begin{document}
+\begin{algorithm}[H]
+    \Fn{binary\_search($N$)}{
+        $w \gets 1$ \tcp{注释1} %行内注释。行末不需要也不能加\\
+        $b \gets N$ \tcp*{注释2} %右对齐
+        \While{$w + 1 < b$} {
+            $m \gets \lfloor (w+b)/2 \rfloor $ \\
+            \If (\tcp*[f]{注释3}) {第$m$个球是白色} {
+                $w \gets m$
+            } \Else {
+                $b \gets m$
+            }
+        }
+        \Return{$w$}
+    }
+\end{algorithm}
+\end{document}
+```
