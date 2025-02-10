@@ -1,5 +1,6 @@
 # 有行号的代码块
 
+<pre>
 ```cpp {*}{lines: true}
 int main() {
   int sum = 0;
@@ -13,6 +14,7 @@ int main() {
   return 0;
 }
 ```
+</pre>
 
 注意：`{*}` 和 `{lines: true}` 之间**不能**有空格。
 
