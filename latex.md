@@ -40,10 +40,13 @@ if called as `\ceil*{x}` it will add `\left` and `\right`.
 
 # 用 pgfplots 画函数图像
 
-例子：
-```
+例一：
+```latex
 \begin{tikzpicture}
-\begin{axis}[xlabel=$x$, ylabel=$f(x)$,axis lines=center,
+\begin{axis}[
+axis lines=center, %有坐标轴，坐标轴在中心。
+xlabel=$x$,
+ylabel=$f(x)$,
 title ={$f(x) = x^2$}
 ]
 \addplot [
@@ -55,6 +58,25 @@ samples=201,
 \end{axis}
 \end{tikzpicture}
 ```
+例二：
+```latex
+\begin{tikzpicture}
+\begin{axis}[
+axis lines=none, %无坐标轴。
+title ={$f(x) = x^2$}
+]
+\addplot [
+color=red,
+domain=-10:10,
+samples=201,
+]
+{x^2};
+\end{axis}
+\end{tikzpicture}
+```
+
+
+
 
 [Plot a function of logarithm with PGFplots](https://tex.stackexchange.com/q/444375/135216)  
 有函数 `log(x)` 和 `log2(x)` 可用，其他底数的对数需要用换底公式。
