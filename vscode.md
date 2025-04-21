@@ -1,3 +1,9 @@
+# Ctrl + Space 快捷键被 Windows 输入法拦截
+
+在 Windows 上 Ctrl + Space 是输入法的中英文切换快捷键。在 VSCode 里 Ctrl + Space 是 code completion 的 Trigger Suggest 命令的快捷键。
+
+为了使用 Trigger Suggest，就得在 Windows 的输入法设置里把 Ctrl + Space 选项取消。
+
 # 设置快捷键：把当前行滚动到屏幕上部
 
 1. 安装扩展 [Commands](https://marketplace.visualstudio.com/items?itemName=usernamehw.commands)
