@@ -84,9 +84,10 @@ samples=201,
 [How to plot x^(1/3)?](https://tex.stackexchange.com/q/144454/135216)  
 `x/abs(x)*abs(x)^(1/3)`
 
-# What's the difference between \mathrm and \operatorname?
+# \mathrm，\operatorname，\DeclareMathOperator
 
-https://tex.stackexchange.com/q/19180/135216
+[What's the difference between \mathrm and \operatorname?](https://tex.stackexchange.com/questions/48459/whats-the-difference-between-mathrm-and-operatorname)
+
 
 # 排版伪代码
 
