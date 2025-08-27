@@ -114,3 +114,27 @@ https://tex.stackexchange.com/q/19180/135216
 \end{algorithm}
 \end{document}
 ```
+
+# 用 minted 排代码
+
+minted 环境
+
+```latex
+\begin{minted}[<options>]{<lang>}
+<codes>
+\end{minted}
+```
+
+\inputminted 命令
+```latex
+\inputminted[<options>]{<lang>}{<file>}
+```
+
+用 `\mintinline` 命令排行内代码
+```latex
+\mintinline[<options>]{lang}<delim><code><delim>
+```
+> The delimiters can be a single repeated character. They can also be a pair of curly braces, `{}`. Curly braces are required when `\mintinline` is used in a movable argument, such as in a `\section`.
+
+用 `\setminted` 命令设置全局选项
+> You may wish to set options for the document as a whole, or for an entire lexer (language). This is possible via `\setminted[〈lexer〉]{〈key=value,...〉}`. Lexer-specific options override document-wide options. Individual command and environment options override lexer-specific options.
