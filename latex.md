@@ -38,6 +38,10 @@ https://tex.stackexchange.com/questions/42271/floor-and-ceiling-functions
 
 if called as `\ceil*{x}` it will add `\left` and `\right`.
 
+# 不能用中文字符做 label
+
+https://tex.stackexchange.com/questions/18311/what-are-the-valid-names-as-labels
+
 # 用 pgfplots 画函数图像
 
 例一：
