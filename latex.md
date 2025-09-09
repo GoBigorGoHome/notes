@@ -143,3 +143,8 @@ minted 环境
 
 用 `\setminted` 命令设置全局选项
 > You may wish to set options for the document as a whole, or for an entire lexer (language). This is possible via `\setminted[〈lexer〉]{〈key=value,...〉}`. Lexer-specific options override document-wide options. Individual command and environment options override lexer-specific options.
+
+
+# 使用算式
+
+在 LaTeX 里，凡是需要数值的地方都可以使用简单的算式（比如加减乘除）。在 TikZ 里面，凡是需要数值的地方（比如坐标、长度）还可以使用复杂的算式（比如 sin）。在这些地方使用算式都**不需要**使用特别的包。
