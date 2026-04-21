@@ -1,3 +1,7 @@
+# Stirling 数的符号
+
+在 TeX 里就有两类 Stirling 数的符号。第二类 Stirling 数 `{n \brace k}`, ${n \brace k}$. 第一类 Stirling 数 `{n \brack k}`, ${n \brack k}$.
+
 # fontspec font selection with XeLaTeX
 
 选择非系统字体（例如 texlive 带的字体）时，只能通过字体文件名（by file name）。  
