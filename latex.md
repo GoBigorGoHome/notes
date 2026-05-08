@@ -1,3 +1,30 @@
+# 定义 \multichoose
+
+我是在 Richard Stanley 的 Enumerative Combinatorics 的 §1.2 看到这个符号的。
+<img width="1678" height="600" alt="image" src="https://github.com/user-attachments/assets/c4fe0891-3e86-45d4-89b1-c9d0ccb91600" />
+
+在 TeX 里，`\choose` 是用 `\atopwithdelims` 定义的
+```tex
+\def\choose{\atopwithdelims()}
+```
+<img width="1796" height="1122" alt="image" src="https://github.com/user-attachments/assets/d83c0316-0c5f-4f23-97ae-44a9dc527a04" />
+
+但是 delim1 和 delim2 只能是单个字符，不能是 (( 和 ))。
+
+amsmath 宏包定义了一个 `\genfrac` 命令，genfrac 和含义是 generalized fraction。
+<img width="1876" height="752" alt="image" src="https://github.com/user-attachments/assets/2b994743-f65e-4099-a7c1-bf8ef9950fe9" />
+<img width="1920" height="692" alt="image" src="https://github.com/user-attachments/assets/64763a4a-b7e0-4ef8-a793-f2077f61ccf6" />
+
+`\genfrac` 命令的前两个参数用来指定左右的 delimiter，同样只能是单个字符。
+
+最终，我的 \multichoose 命令的定义是
+```tex
+\newcommand{\multichoose}[2]{\left(\kern-.3em\left(\genfrac{}{}{0pt}{}{#1}{#2}\right)\kern-.3em\right)}
+```
+解释：`\genfrac{}{}{0pt}{}{#1}{#2}` 定义了一个没有分数线的分数，然后在两边各加两个括号。
+
+来源：https://tex.stackexchange.com/a/5825/135216
+
 # Stirling 数的符号
 
 在 TeX 里就有两类 Stirling 数的符号。第二类 Stirling 数 `{n \brace k}`, ${n \brace k}$. 第一类 Stirling 数 `{n \brack k}`, ${n \brack k}$.
